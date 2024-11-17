@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="/_vercel/insights/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css" />
+    <title>Status de Doll</title>
+    <meta name="description" content="Status do Reverendo Nephis" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://imgur.com/YH71TXo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #76c7c0;
+        }
+        .card {
+            background: rgba(59, 59, 59, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            position: relative;
+        }
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        .card::before {
+            content: '';
+            background: url('https://imgur.com/YH71TXo.jpg') no-repeat;
+            background-size: contain cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.5;
+            border-radius: 10px;
+            z-index: -1;
+        }
+        .card h2 {
+            margin: 10px 0;
+            color: #f5b12b;
+        }
+        .card p {
+            margin: 5px 0;
+        }
+        .attributesf, .titles, .classes {
+            margin: 15px 0;
+            padding: 10px;
+            background: #444;
+            border-radius: 5px;
+        }
+         .attributes {
+           margin: 15px 0;
+           padding: 10px;
+           background: url('https://i.imgur.com/PJkjp9F.gif') no-repeat;
+           background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+           border-radius: 5px;
+           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Se quiser uma sombra suave ao redor */
+        }
+
+        .status-bar {
+            margin: 10px 0;
+            font-weight: bold;
+
+        }
+        .status-value {
+            color: #76c7c0;
+        }
+        .gif {
+            width: 30px;
+            height: auto;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        .titles, .classes {
+            margin: 15px 0;
+            padding: 10px;
+            background: #444;
+            border-radius: 5px;
+        }
+        .status-bar {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .statuss-bar {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .status-value {
+            color: #76c7c0;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            border-radius: 10px;
+            background-color: #ddd;
+            margin-top: 5px;
+        }
+        .mental-bar {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .gif {
+            width: 30px;
+            height: auto;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        .gif2 {
+            width: 100px;
+            height: auto;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        .progress-bar p {
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Status de Doll</h1>
+    
+    <div class="card">
+        <h2>Nephis <img src="GIF ALMA" alt="" class="gif"></h2>
+        <img src="GIF AO LADO DO NOME" alt="" class="gif2">
+        <p><strong>Idade:</strong> 20 anos</p>
+        <p><strong>Nível:</strong> 117</p>
+        <p><strong>Raça:</strong> Humano Superior, 1/4 Elfo <img src="https://imgur.com/WWBDK5T.png" alt="Raça" class="gif"><img src="https://imgur.com/kyeg11s.png" alt="Raça" class="gif"></p>
+        
+        <div class="attributes">
+            <h3>Atributos</h3>
+            <p class="status-bar"><img src="https://i.imgur.com/25bxTGa.gif" alt="HP" class="gif" />[ ] HP: <span class="status-value">17.223</span></p>
+            <p class="status-bar"><img src="https://i.imgur.com/ZHuxhHW.gif" alt="MP" class="gif" />[ ] MP: <span class="status-value">X</span></p>
+              <p class="status-bar"><img src="https://imgur.com/XBNPfZP.gif" alt="RP" class="gif" />[ ] RP: <span class="status-value">13.940.668</span></p>
+            <p class="status-bar"><img src="https://i.imgur.com/uzS8oj8.gif" alt="AGI" class="gif" />[ ] AGI: <span class="status-value">6.312</span></p>
+            <p class="status-bar"><img src="https://i.imgur.com/Tf1phAq.gif" alt="DEF" class="gif" />[ ] DEF: <span class="status-value">59.067</span></p>
+            <p class="status-bar"><img src="https://i.imgur.com/HNlCPjW.gif" alt="RES" class="gif" />[ ] RES: <span class="status-value">X</span></p>
+            <p class="status-bar"><img src="https://i.imgur.com/Q2H1k5f.gif" alt="SPD" class="gif" />[ ] SPD: <span class="status-value">6.972</span></p>
+            <p class="status-bar"><img src="https://i.imgur.com/QjlNy8l.gif" alt="INT" class="gif" />[ ] INT: <span class="status-value">X</span></p>
+            <p class="status-bar"><img src="https://i.imgur.com/q6CuCfC.gif" alt="ATK" class="gif" />[ ] ATK: <span class="status-value">1.969</span></p>
+            <p class="status-bar"><img src="https://i.imgur.com/wnVtTpl.gif" alt="SMP" class="gif" />[ ] SMP: <span class="status-value">0</span></p>
+            <p class="status-bar"><img src="https://i.imgur.com/507gMr6.gif" alt="ASMP" class="gif" />[ ] ??: <span class="status-value">20,00</span></p>
+        </div>
+
+        <div class="classes">
+            <h3>Classes</h3>
+            <p><strong>Profissão:</strong> Estudante (5), Pescador (1093), linguist (132), Stripper (61)</p>
+
+ <p><strong>Classe:</strong> Mago (18), Ilusionista (13), nicromante (2), Dungeon Keeper (03), ASSASSINO (X) Xenor [1]</p>
+ 
+ <p><strong>Chevalier Type:</strong> ??(32)</p>
+
+        <div class="titles">
+            <h3>Títulos</h3>
+            <p><strong>Título 1:</strong> Amigo do rei gato</p>
+            <p><strong>Título 2:</strong> O mainipulado sem manipulação</p>
+            <p><strong>Título 3:</strong> <b>Time eater</b></p>
+            <p><strong>Título 4:</strong> O Emissario</p>
+            <p><strong>Título 5:</strong> O Infortunado</p>
+            <p><strong>Título 6:</strong> 10 de Espadas</p>
+            <p><strong>Título 7:</strong> Traidor da Humanidade</p>
+            <p><strong>Título 8:</strong> Boss 1F <b>[Forest of ruins]</p>
+            <p><strong>Título 9:</strong> O Evoluido[1]</b></p>
+            <p><strong>Título 10:</strong> Ladrão da Esperança</p>
+            <p><strong>Título 11:</strong> <b>Assassino de lordes</b></p>
+            <p><strong>Título 12:</strong> O Deserdado</p>
+        </div>
+        <div class="titles">
+            <h3>Bênçãos</h3>
+            <p><strong>1:</strong> Bearer of the true message.</p>
+            <p><strong>2:</strong> Admiration of the dream sands.</p>
+        </div>
+        <div class="statuss-bar">
+            <strong>Taxa de assimilação:</strong> 80,00%
+        </div>
+
+
+    <!-- Player de Música -->
+        <div class="music-player">
+            <h3>Aura</h3>
+            <iframe width="100%" height="400" src="https://player-widget.mixcloud.com/widget/iframe/?feed=%2Fstrawaryd%2Fim-not-a-hero-but-ill-save-you%2F" frameborder="0" ></iframe>
+        </div>
+
+    <style>
+        
+    </style><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://imgur.com/YH71TXo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #76c7c0;
+        }
+        .card {
+            background: rgba(59, 59, 59, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        .status-bar {
+            margin: 10px 0;
+        }
+        .status-bar strong {
+            display: inline-block;
+            width: 100px;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 25px;
+            border-radius: 12px;
+            background-color: #ddd;
+            margin-top: 5px;
+        }
+        .mental-bar {
+            height: 100%;
+            border-radius: 12px;
+            transition: width 0.3s ease-in-out;
+        }
+        .section-title {
+            color: #76c7c0;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Status Fisicos</h1>
+    
+    <!-- Necessidades Básicas -->
+    <div class="card">
+        <h2 class="section-title">Necessidades Básicas</h2>
+        
+        <div class="status-bar">
+            <strong>Higiene:</strong>
+            <div class="progress-bar" id="hygiene-bar">
+                <div class="mental-bar" id="mental-hygiene-bar" style="width: 100%;"></div>
+            </div>
+            <p><span id="hygiene-percentage">100</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Banheiro:</strong>
+            <div class="progress-bar" id="bathroom-bar">
+                <div class="mental-bar" id="mental-bathroom-bar" style="width: 20%;"></div>
+            </div>
+            <p><span id="bathroom-percentage">20</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Sono:</strong>
+            <div class="progress-bar" id="sleep-bar">
+                <div class="mental-bar" id="mental-sleep-bar" style="width: 80%;"></div>
+            </div>
+            <p><span id="sleep-percentage">80</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Desgaste:</strong>
+            <div class="progress-bar" id="weariness-bar">
+                <div class="mental-bar" id="mental-weariness-bar" style="width: 50%;"></div>
+            </div>
+            <p><span id="weariness-percentage">50</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Fome:</strong>
+            <div class="progress-bar" id="hunger-bar">
+                <div class="mental-bar" id="mental-hunger-bar" style="width: 50%;"></div>
+            </div>
+            <p><span id="hunger-percentage">50</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Sede:</strong>
+            <div class="progress-bar" id="thirst-bar">
+                <div class="mental-bar" id="mental-thirst-bar" style="width: 40%;"></div>
+            </div>
+            <p><span id="thirst-percentage">40</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Diversão:</strong>
+            <div class="progress-bar" id="fun-bar">
+                <div class="mental-bar" id="mental-fun-bar" style="width: 75%;"></div>
+            </div>
+            <p><span id="fun-percentage">75</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Social:</strong>
+            <div class="progress-bar" id="social-bar">
+                <div class="mental-bar" id="mental-social-bar" style="width: 60%;"></div>
+            </div>
+            <p><span id="social-percentage">60</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Foco:</strong>
+            <div class="progress-bar" id="focus-bar">
+                <div class="mental-bar" id="mental-focus-bar" style="width: 80%;"></div>
+            </div>
+            <p><span id="focus-percentage">80</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Autoestima:</strong>
+            <div class="progress-bar" id="selfesteem-bar">
+                <div class="mental-bar" id="mental-selfesteem-bar" style="width: 65%;"></div>
+            </div>
+            <p><span id="selfesteem-percentage">65</span>%</p>
+        </div>
+
+        <h3>Condições Temporárias:</h3>
+
+        <div class="status-bar">
+            <strong>Enjoo:</strong>
+            <div class="progress-bar" id="nausea-bar">
+                <div class="mental-bar" id="mental-nausea-bar" style="width: 10%;"></div>
+            </div>
+            <p><span id="nausea-percentage">10</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Fadiga:</strong>
+            <div class="progress-bar" id="fatigue-bar">
+                <div class="mental-bar" id="mental-fatigue-bar" style="width: 55%;"></div>
+            </div>
+            <p><span id="fatigue-percentage">55</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Estresse:</strong>
+            <div class="progress-bar" id="stress-bar">
+                <div class="mental-bar" id="mental-stress-bar" style="width: 50%;"></div>
+            </div>
+            <p><span id="stress-percentage">50</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Ansiedade:</strong>
+            <div class="progress-bar" id="anxiety-bar">
+                <div class="mental-bar" id="mental-anxiety-bar" style="width: 45%;"></div>
+            </div>
+            <p><span id="anxiety-percentage">45</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Medo:</strong>
+            <div class="progress-bar" id="fear-bar">
+                <div class="mental-bar" id="mental-fear-bar" style="width: 30%;"></div>
+            </div>
+            <p><span id="fear-percentage">30</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Felicidade:</strong>
+            <div class="progress-bar" id="happiness-bar">
+                <div class="mental-bar" id="mental-happiness-bar" style="width: 80%;"></div>
+            </div>
+            <p><span id="happiness-percentage">80</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Tesão:</strong>
+            <div class="progress-bar" id="desire-bar">
+                <div class="mental-bar" id="mental-desire-bar" style="width: 70%;"></div>
+            </div>
+            <p><span id="desire-percentage">70</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Tempo:</strong>
+            <div class="progress-bar" id="time-bar">
+                <div class="mental-bar" id="mental-time-bar" style="width: 25%;"></div>
+            </div>
+            <p><span id="time-percentage">25</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Tédio:</strong>
+            <div class="progress-bar" id="boredom-bar">
+                <div class="mental-bar" id="mental-boredom-bar" style="width: 25%;"></div>
+            </div>
+            <p><span id="boredom-percentage">25</span>%</p>
+        </div>
+
+        <div class="status-bar">
+            <strong>Raiva:</strong>
+            <div class="progress-bar" id="anger-bar">
+                <div class="mental-bar" id="mental-anger-bar" style="width: 20%;"></div>
+            </div>
+            <p><span id="anger-percentage">20</span>%</p>
+        </div>
+
+    </div>
+
+    <script>
+        const statusData = {
+            hygiene: 21, 
+            bathroom: 17, 
+            sleep: 11, 
+            weariness: 61, 
+            hunger: 81,
+            thirst: 79, 
+            fun: 98, 
+            social: 29, 
+            focus: 88, 
+            selfesteem: 99,
+            nausea: 32, 
+            fatigue: 54, 
+            stress: 81, 
+            anxiety: 3, 
+            fear: 0,
+            happiness: 96, 
+            desire: 1, 
+            boredom: 1,
+            time: 57,
+            anger: 17
+        };
+
+        function updateBarColors() {
+            for (const [key, value] of Object.entries(statusData)) {
+                const color = key === 'happiness' || key === 'fun' || key === 'focus' || key === 'selfesteem' || key === 'hygiene' || key === 'time' || key === 'social' || key === 'bathroom' || key === 'sleep' || key === 'desire'
+                    ? value > 70 ? '#33cc33' : value > 40 ? '#ffcc00' : '#ff3333'
+                    : value < 30 ? '#33cc33' : value < 60 ? '#ffcc00' : '#ff3333';
+                document.getElementById(`${key}-percentage`).innerText = value;
+                document.getElementById(`mental-${key}-bar`).style.backgroundColor = color;
+                document.getElementById(`mental-${key}-bar`).style.width = `${value}%`;
+            }
+        }
+
+        updateBarColors();
+    </script>
+
+</body>
+</html>
+
+  <style>
+        body {
+/* Estilo do painel de habilidades */
+       } .action-button {
+            display: inline-block;
+            background-color: #76c7c0;
+            color: #333;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .action-button:hover {
+            background-color: #5ca09e;
+        }
+        #skills-panel {
+            display: none;
+            background: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            position: relative;
+        }
+        #skills-list {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        #skills-list li {
+            cursor: pointer;
+            padding: 10px;
+            border-bottom: 1px solid #555;
+        }
+        #skills-list li:hover {
+            background-color: #444;
+        }
+        #skill-details {
+            margin-top: 15px;
+        }
+        #skill-details h3 {
+            color: #f5b12b;
+        }
+        #skill-details p {
+            margin-bottom: 10px;
+        }
+        .details-section {
+            margin-top: 10px;
+            padding: 10px;
+            background: #555;
+            border-radius: 5px;
+        }
+        .details-section h4 {
+            margin-bottom: 5px;
+        }
+    </style>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status do Personagem</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estrutura principal */
+        .status-containercube {
+            display: none;
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #000;
+            background-color: #fdfdfd;
+            text-align: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            border-radius: 10px;
+        }
+
+        /* Cabeçalho do personagem */
+        .character-headercube {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .diamond-iconcube {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #000;
+            background-color: #fff;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .heart-iconcube {
+            width: 35px;
+            height: 35px;
+            border: 1px solid #000;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #d12a5c;
+        }
+
+        .character-namecube {
+            font-weight: bold;
+            font-size: 26px;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        /* Barra de progresso */
+        .progress-bar-containercube {
+            width: 100%;
+            height: 30px;
+            background-color: #e0e0e0; /* Cor de fundo da barra */
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-barcube {
+            height: 100%;
+            background-color: #5f4b8b; /* Cor azul-roxa */
+            width: 0%; /* Definido por JavaScript */
+            text-align: center;
+            color: white;
+            line-height: 30px; /* Centraliza o texto verticalmente */
+            font-weight: bold;
+            border-radius: 15px;
+        }
+
+        .progress-segmentcube {
+            width: calc(100% / 8);
+            height: 100%;
+            border-right: 2px solid #000;
+            position: relative;
+        }
+
+        .progress-fillcube {
+            height: 100%;
+            background-color: #555;
+            width: 40%;
+            position: absolute;
+            z-index: 0;
+        }
+
+        .progress-points {
+            position: absolute;
+            bottom: -18px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 12px;
+        }
+
+        .progress-bar-labelcube {
+            margin-left: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        /* Informações do personagem */
+        .character-infocube {
+            font-size: 16px;
+            text-align: left;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        /* Classes */
+        .class-infocube {
+            font-size: 14px;
+            text-align: left;
+            line-height: 1.5;
+            color: #000;
+        }
+
+        /* Títulos */
+        .titlescube {
+            margin-top: 30px;
+        }
+
+        .titles-headercube {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .title-listcube {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+
+        .title-itemcube {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            text-align: center;
+            padding: 10px;
+            color: #000;
+            margin: 5px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .title-itemcube:hover {
+            transform: scale(1.1);
+        }
+
+        .view-more-btn {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #800080;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        /* Modal (janela flutuante) */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 30px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            max-width: 500px;
+            width: 100%;
+            z-index: 10000;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+
+        .modal-header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .modal-content {
+            font-size: 16px;
+            color: #000;
+        }
+
+        .close-btn {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border-radius: 5px;
+        }
+
+        /* Botão de abrir a caixa portal */
+        .open-portal-btncube {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #800080;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 10000;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(45deg);
+            }
+         .btcubeopen {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 0;                 /* Removendo qualquer padding extra */
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    z-index: 10000;
+    width: 50px;                /* Defina o tamanho desejado do botão */
+    height: 50px;               /* Defina o tamanho desejado do botão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;          /* Remove qualquer fundo */
+    background-image: url('');
+    background-size: cover;    /* Ajusta a imagem para cobrir o botão atrás do png */
+    background-position: center; /* Centraliza a imagem */
+    border-radius: 50%;        /* Deixe o botão redondo */
+}
+
+button:focus {
+    outline: none;  /* Remove o contorno do botão quando clicado */
+}
+
+button:active {
+    background: none; /* Remove qualquer fundo quando pressionado */
+}
+
+
+        }
+
+        .open-portal-btncube::before {
+            content: "♥";
+            font-size: 32px;
+            color: white;
+            text-align: center;
+        }
+
+        .open-portal-btncube:hover {
+            background-color: #6a006a;
+        }
+
+        /* Botões adicionais */
+        .additional-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+         /* Gifs de Títulos */
+        .titlescubeg {
+            margin-top: 30px;
+        }
+
+        .titles-headercubeg {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .title-listcubeg {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+        .title-itemcubeg:hover {
+            transform: scale(1.6); /* Efeito de hover para aumentar o item */
+        }
+        .title-itemcubeg {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            text-align: center;
+            padding: 10px;
+            color: #000;
+            margin: 5px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .buttoncube {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #800080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buttoncube:hover {
+            background-color: #6a006a;
+        }
+
+        .modal-content-list {
+            margin-top: 15px;
+            font-size: 14px;
+            list-style: none;
+            padding: 0;
+            color: #000;
+        }
+
+        .modal-content-list li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
