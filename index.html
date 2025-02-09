@@ -10,7 +10,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: url('https://imgur.com/YH71TXo.jpg') no-repeat center center fixed;
+            background: url('https://github.com/PrinnyXII/st/blob/main/rep/M.jpg?raw=true') no-repeat center center fixed;
             background-size: cover;
             color: #ffffff;
             padding: 20px;
@@ -180,6 +180,7 @@
             <p><strong>Título 10 - </strong> Ladrão da Esperança</p>
             <p><strong>Título 11 - </strong> <b>Assassino de lordes</b></p>
             <p><strong>Título 12 - </strong> O Deserdado</p>
+            <p><strong>Título 13 - </strong> Archangel Slayer (k-17)</p>
         </div>
         <div class="titles">
             <h3>Bênçãos</h3>
@@ -214,7 +215,7 @@
         /* Estilos básicos */
         body {
             font-family: Arial, sans-serif;
-            background: url('https://imgur.com/YH71TXo.jpg') no-repeat center center fixed;
+            background: url('https://github.com/PrinnyXII/st/blob/main/rep/M.jpg?raw=true') no-repeat center center fixed;
             background-size: cover;
             color: #ffffff;
             padding: 20px;
@@ -411,6 +412,14 @@
         </div>
 
         <div class="status-bar">
+            <strong>Almas:</strong>
+            <div class="progress-bar" id="soul-bar">
+                <div class="mental-bar" id="mental-soul-bar" style="width: 25%;"></div>
+            </div>
+            <p><span id="soul-percentage">25</span>%</p>
+        </div>
+
+        <div class="status-bar">
             <strong>Tédio:</strong>
             <div class="progress-bar" id="boredom-bar">
                 <div class="mental-bar" id="mental-boredom-bar" style="width: 25%;"></div>
@@ -430,26 +439,27 @@
 
     <script>
         const statusData = {
-            hygiene: 21, 
-            bathroom: 17, 
-            sleep: 11, 
-            weariness: 61, 
-            hunger: 81,
-            thirst: 79, 
-            fun: 98, 
-            social: 29, 
-            focus: 88, 
-            selfesteem: 99,
-            nausea: 32, 
-            fatigue: 54, 
-            stress: 81, 
-            anxiety: 3, 
+            hygiene: 13, 
+            bathroom: 15, 
+            sleep: 100, 
+            weariness: 3, 
+            hunger: 3,
+            thirst: 0, 
+            fun: -23, 
+            social: 79, 
+            focus: 101, 
+            selfesteem: 101,
+            nausea: 0, 
+            fatigue: 0, 
+            stress: 97, 
+            anxiety: 41, 
             fear: 0,
-            happiness: 96, 
-            desire: 1, 
-            boredom: 1,
-            time: 93,
-            anger: 17
+            happiness: 3, 
+            desire: 49, 
+            soul: 17, 
+            boredom: 0,
+            time: 100,
+            anger: 94
         };
 
         function updateBarColors() {
